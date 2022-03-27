@@ -5,16 +5,18 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 #include <ctime>
-#include <unistd.h>
 
 //Shuffles the vector using Fisher-Yates algorithm
-void shuffle(std::vector<sf::RectangleShape>& recHolder, sf::RenderWindow &window, int wait);
+void shuffle(std::vector<sf::RectangleShape>& recHolder, sf::RenderWindow &window);
 
 //Show text infos and bindings
 void showInfos(sf::RenderWindow &window);
 
 //Fills the vector with random numbers
 void FillVector(sf::RectangleShape rec, std::vector<sf::RectangleShape> &recHolder , sf::RenderWindow &window);
+
+//Fills the vector with numbers from 1 to 100
+void FillVectorContinue(sf::RectangleShape rec, std::vector<sf::RectangleShape> &recHolder , sf::RenderWindow &window);
 
 //Refreshes the vector on-screen
 void printVector(sf::RenderWindow &window, std::vector<sf::RectangleShape> recHolder);
